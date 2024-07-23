@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Slider</title>
+    <meta
+      name="description"
+      content="This Slider"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hubcrag" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+
+    <div data-barba="wrapper" aria-live="polite">
+      <div id="home-cont">
+        <div id="belt">
+          <div class="award spot4_next"></div>
+          <div class="award spot1_next"></div>
+          <div class="award spot2_next"></div>
+          <div class="award spot3_next"></div>
+        </div>
+        <div id="frame">
+          <div class="base" style="background-color: rgb(12, 71, 103)"></div>
+          <div class="base" style="background-color: rgb(254, 190, 188)"></div>
+          <div class="base" style="background-color: rgb(107, 111, 107)"></div>
+        </div>
+
+        <div id="home-navSection">
+          <div
+            id="prevSection"
+            onmouseover="retractLine('prev',true)"
+            onmouseout="retractLine('prev',false)"
+          >
+            <div onclick="browse('prev')">PREV</div>
+            <div>
+              <div class="navLine" style="width: 56%"></div>
+            </div>
+          </div>
+
+          <div
+            id="nextSection"
+            onmouseover="retractLine('next',true)"
+            onmouseout="retractLine('next',false)"
+          >
+            <div>
+              <div class="navLine" style="width: 47.4196%"></div>
+            </div>
+            <div onclick="browse('next')">NEXT</div>
+          </div>
+        </div>
+
+        <div id="proj-info">
+          <div id="shotSection">
+            <div>Shot</div>
+            <div id="shotNumContainer">
+              <p
+                class="shot_node"
+                id="shot_node_n"
+                style="transform: translate(0px)"
+              >
+                1
+              </p>
+              <p
+                class="shot_node"
+                id="shot_node_0"
+                style="transform: translate(0px)"
+              >
+                3
+              </p>
+              <p
+                class="shot_node"
+                id="shot_node_1"
+                style="transform: translate(0px)"
+              >
+                3
+              </p>
+            </div>
+            <div></div>
+            <div id="shotTotal">4</div>
+          </div>
+
+          <div id="awardSection">
+            <div>
+              <p
+                class="awardTitle1_node"
+                id="at1_node_n"
+                style="transform: translate(0px)"
+              >
+                Deuvaux
+              </p>
+              <p
+                class="awardTitle1_node"
+                id="at1_node_0"
+                style="transform: translate(0px)"
+              >
+                The
+              </p>
+              <p
+                class="awardTitle1_node"
+                id="at1_node_1"
+                style="transform: translate(0px)"
+              >
+                The
+              </p>
+            </div>
+            <div>
+              <p
+                class="awardTitle2_node"
+                id="at2_node_n"
+                style="transform: translate(0px)"
+              >
+                Monet
+              </p>
+              <p
+                class="awardTitle2_node"
+                id="at2_node_0"
+                style="transform: translate(0px)"
+              >
+                Dress
+              </p>
+              <p
+                class="awardTitle2_node"
+                id="at2_node_1"
+                style="transform: translate(0px)"
+              >
+                Dress
+              </p>
+            </div>
+            <div>
+              <p
+                class="awardTitle3_node"
+                id="at3_node_n"
+                style="transform: translate(0px)"
+              >
+                Awards
+              </p>
+              <p
+                class="awardTitle3_node"
+                id="at3_node_0"
+                style="transform: translate(0px)"
+              >
+                -rosa
+              </p>
+              <p
+                class="awardTitle3_node"
+                id="at3_node_1"
+                style="transform: translate(0px)"
+              >
+                -rosa
+              </p>
+            </div>
+          </div>
+          <div id="dateSection">
+            <p
+              class="date_node"
+              id="date_node_n"
+              style="transform: translate(0px)"
+            >
+              November 2021
+            </p>
+            <p
+              class="date_node"
+              id="date_node_0"
+              style="transform: translate(0px)"
+            >
+              March 2021
+            </p>
+            <p
+              class="date_node"
+              id="date_node_1"
+              style="transform: translate(0px)"
+            >
+              March 2021
+            </p>
+          </div>
+        </div>
+
+        <div id="home-proj-info-m">
+          <div>
+            <p
+              class="awardTitle_node_m"
+              id="at_node_n_m"
+              style="transform: translate(0px)"
+            >
+              Deuvaux Monet Awards
+            </p>
+            <p
+              class="awardTitle_node_m"
+              id="at_node_0_m"
+              style="transform: translate(0px)"
+            >
+              The Dressrosa Awards
+            </p>
+            <p
+              class="awardTitle_node_m"
+              id="at_node_1_m"
+              style="transform: translate(0px)"
+            >
+              The Dressrosa Awards
+            </p>
+          </div>
+          <div>
+            <p
+              class="date_node_m"
+              id="date_node_n_m"
+              style="transform: translate(0px)"
+            >
+              November 2021
+            </p>
+            <p
+              class="date_node_m"
+              id="date_node_0_m"
+              style="transform: translate(0px)"
+            >
+              March 2021
+            </p>
+            <p
+              class="date_node_m"
+              id="date_node_1_m"
+              style="transform: translate(0px)"
+            >
+              March 2021
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
